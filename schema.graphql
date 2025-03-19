@@ -1,0 +1,43 @@
+type Deposit @entity {
+  id: ID!
+  user: Bytes!
+  amount: BigInt!
+  sharesMinted: BigInt!
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  transactionHash: Bytes!
+}
+
+type Withdrawal @entity {
+  id: ID!
+  user: Bytes!
+  amount: BigInt!
+  sharesBurned: BigInt!
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  transactionHash: Bytes!
+}
+
+type DailyRevenueMetric @entity {
+  id: ID!
+  date: String!
+  totalRevenueETH: BigDecimal!
+  feesCollectedETH: BigDecimal!
+  totalDepositsETH: BigDecimal!
+  totalWithdrawalsETH: BigDecimal!
+  netFlowETH: BigDecimal!
+  averageAPY: BigDecimal!
+  uniqueDepositors: BigInt!
+  uniqueWithdrawers: BigInt!
+  transactionCount: BigInt!
+}
+
+type Protocol @entity {
+  id: ID!
+  name: String!
+  totalValueLockedETH: BigDecimal!
+  totalFeesCollectedETH: BigDecimal!
+  totalDepositsETH: BigDecimal!
+  totalWithdrawalsETH: BigDecimal!
+  lastUpdateTimestamp: BigInt!
+}

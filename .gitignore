@@ -1,0 +1,32 @@
+# Generated files
+generated/
+build/
+
+# Dependencies
+node_modules/
+yarn.lock
+package-lock.json
+
+# Environment files
+.env
+.env.*
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+dist/
+build/
