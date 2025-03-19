@@ -1,3 +1,6 @@
+# graphql-analyzer
+Using GRT to analyze protocol metrics 
+
 # Lido Revenue Metrics Subgraph
 
 This subgraph indexes revenue-related data from Lido protocol on Ethereum mainnet, tracking deposits, withdrawals, and fees to provide comprehensive revenue metrics.
